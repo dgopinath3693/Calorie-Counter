@@ -1,11 +1,3 @@
-// --== CS400 Fall 2023 File Header Information ==--
-// Name: Diya Gopinath
-// Email: dgopinath2@wisc.edu
-// Group: A09
-// TA: Connor Bailey
-// Lecturer: Gary Dahl
-// Notes to Grader: <optional extra notes>
-
 import org.junit.jupiter.api.Test;
 import static  org.junit.jupiter.api.Assertions.assertEquals;
 import static  org.junit.jupiter.api.Assertions.assertTrue;
