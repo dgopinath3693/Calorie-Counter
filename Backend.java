@@ -25,50 +25,6 @@ public class Backend implements BackendInterface{
 	}
 
 
-    // @Override
-	// public boolean readFileData(String filename) throws IOException {
-	// 	List<IngredientInterface> ingredients = new ArrayList<>();
-	// 	try (BufferedReader reader = new BufferedReader(new FileReader(filename))) {
-    //         String line;
-    //         boolean skipFirstLine = true;
-    //         while ((line = reader.readLine()) != null) {
-    //             if (skipFirstLine) {
-    //                 skipFirstLine = false;
-    //                 continue;
-    //             }
-    //             while (line != null) {
-    //             String[] parts = line.split(",");
-    //             ingredients.add(new IngredientName(parts[0],Integer.valueOf(parts[4].split(" ")[0]),parts[1]));        
-    //             }
-    //         }
-    //     }
-    //          catch(IOException e){
-    //             throw new IOException("Error");
-	// 	        }
-	// 	this.addKey(ingredients);
-    //     return true; 
-	//     }
-    // @Override
-    // public boolean readFileData(String filename) throws IOException{
-    //     List<IngredientInterface> ingredients = new ArrayList<>();
-	// 	Path filePath = Paths.get(filename);
-		
-	// 	try(BufferedReader reader = Files.newBufferedReader(filePath)){ 
-    //         String line = reader.readLine();
-
-    //         while (line != null) {
-    //             String[] parts = line.split(",");
-    //             ingredients.add(new IngredientName(parts[0],Integer.valueOf(parts[3].split(" ")[0]),parts[1]));
-    //                 }
-    //         } catch(IOException e){
-    //             throw new IOException("Error");
-	// 	}
-		
-	// 	ingredientsList.addAll(ingredients);
-        
-    //     return true; 
-    // }
-
     @Override
 public boolean readFileData(String filename) throws IOException {
     List<IngredientInterface> ingredients = new ArrayList<>();
@@ -129,22 +85,7 @@ public boolean readFileData(String filename) throws IOException {
     return replacements;
 }
 
-    // @Override
-    // public List<IngredientInterface> listReplacements(String replacement){
-    //         Iterator<IngredientInterface> iterator = dataStructureName.iterator();
-    //         dataStructureName.setIterationStartPoint(ingredientsList.indexOf(replacement));
-    //         List<IngredientInterface> replacements = new ArrayList<>();
-    //         //only does first 3 values for now of the array list 
-    //         for (int i = 0; i < 3 && iterator.hasNext(); i++) {
-    //             IngredientInterface temp = iterator.next();
-    //             replacements.add(temp);
-    //         }
-        
-    //         return replacements;
-    //     }
-
-
-
+	
         public void addKey(List<IngredientInterface> ingredients){
 		for(int i = 0; i<ingredients.size(); i++){
 			dataStructureName.insertSingleKey(ingredients.get(i));
