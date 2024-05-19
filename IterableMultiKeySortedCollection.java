@@ -66,10 +66,6 @@ public class IterableMultiKeySortedCollection<T extends Comparable<T>> implement
 		return iterator;
     }
 
-    // @Override
-    // public void setIterationStartPoint(Comparable<T> startPoint) {
-    //     this.iterator = list.listIterator(list.indexOf(startPoint));
-    // }
 
     @Override
     public void setIterationStartPoint(Comparable<T> startPoint) {
