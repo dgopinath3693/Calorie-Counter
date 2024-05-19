@@ -1,10 +1,3 @@
-// --== CS400 Fall 2023 File Header Information ==--
-// Name: Diya Gopinath
-// Email: dgopinath2@wisc.edu
-// Group: A09
-// TA: Connor Bailey
-// Lecturer: Gary Dahl
-// Notes to Grader: <optional extra notes>
 
 import java.util.LinkedList;
 import java.util.Stack;
@@ -12,9 +5,7 @@ import java.util.Stack;
 
 /**
  * Binary Search Tree implementation with a Node inner class for representing
- * the nodes of the tree. We will turn this Binary Search Tree into a self-balancing
- * tree as part of project 1 by modifying its insert functionality.
- * In week 0 of project 1, we will start this process by implementing tree rotations.
+ * the nodes of the tree. 
  */
 public class BinarySearchTree<T extends Comparable<T>> implements SortedCollectionInterface<T> {
 
@@ -29,10 +20,6 @@ public class BinarySearchTree<T extends Comparable<T>> implements SortedCollecti
         // The down array stores references to the node's children:
         // - down[0] is the left child reference of the node,
         // - down[1] is the right child reference of the node.
-        // The @SupressWarning("unchecked") annotation is use to supress an unchecked
-        // cast warning. Java only allows us to instantiate arrays without generic
-        // type parameters, so we use this cast here to avoid future casts of the
-        // node type's data field.
         @SuppressWarnings("unchecked")
         public Node<T>[] down = (Node<T>[])new Node[2];
         public Node(T data) { this.data = data; }
@@ -341,15 +328,6 @@ public class BinarySearchTree<T extends Comparable<T>> implements SortedCollecti
                 "\nin order: " + this.toInOrderString();
     }
 
-    // Implement at least 3 tests using the methods below. You can
-    // use your notes from lecture for ideas of rotation examples to test with.
-    // Make sure to include rotations at the root of a tree in your test cases.
-    // Give each of the methods a meaningful header comment that describes what is being
-    // tested and make sure your tests have inline comments that help with reading your test code.
-    // If you'd like to add additional tests, then name those methods similar to the ones given below.
-    // Eg: public static boolean test4() {}
-    // Do not change the method name or return type of the existing tests.
-    // You can run your tests through the static main method of this class.
 
     /**
      * This method tests if rotations are properly printed out in level order traversal
@@ -451,20 +429,7 @@ public class BinarySearchTree<T extends Comparable<T>> implements SortedCollecti
             
         }
        
-        // System.out.println(tree.root.down[0].data);
-        // System.out.println(tree.root.data);
-        // tree.rotate(tree.root.down[0].down[0],tree.root);
-       //expected value is the code's to string that prints level order and in order traversal
-        // String actual = tree.toString(); 
-        // System.out.println(actual); 
-        
-        // //actual value is the actual code that should be printed out to check if it matchs the expected
-        // String expected = "child and parent are not related";
-        
-        // //if they don't match, return false. otherwise, return true. 
-        // if (!actual.equals(expected)) {
-        //     return false;
-        // }
+    
         return true;
     }
 
