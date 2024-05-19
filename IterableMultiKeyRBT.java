@@ -1,10 +1,3 @@
- // --== CS400 Fall 2023 File Header Information ==--
-// Name: Diya Gopinath
-// Email: dgopinath2@wisc.edu
-// Group: A09
-// TA: Connor Bailey
-// Lecturer: Gary Dahl
-// Notes to Grader: <optional extra notes>
 
 import java.util.Iterator;
 import java.util.NoSuchElementException;
